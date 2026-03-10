@@ -2,70 +2,625 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Efe Güneş | Link in Bio</title>
-  <meta name="description" content="Efe Güneş — Industrial Engineer. Link in Bio.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Güneş Yapısal Çelik A.Ş. | Çeliğe Şekil, Geleceğe Güven Veriyoruz</title>
+  <meta name="description" content="Güneş Yapısal Çelik A.Ş. — Çelik konstrüksiyon, endüstriyel tesis kurulumu, çelik çatı sistemleri ve projelendirme alanlarında uzman, güvenilir çözüm ortağınız." />
+  <meta name="keywords" content="çelik konstrüksiyon, yapısal çelik, endüstriyel tesis, çelik çatı, çelik yapı, steel construction" />
+  <meta property="og:title" content="Güneş Yapısal Çelik A.Ş." />
+  <meta property="og:description" content="Çeliğe Şekil, Geleceğe Güven Veriyoruz." />
+  <meta property="og:type" content="website" />
+
+  <!-- Google Fonts (production) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <main class="page">
-    <section class="card">
-      <img class="avatar" src="assets/profile1.jpg" alt="Efe Güneş photo" />
-      <h1 class="name">Efe Güneş</h1>
-      <p class="title">Industrial Engineer</p>
-    </section>
 
-    <nav class="links">
-      <!-- LinkedIn butonu -->
-      <a class="link li" href="https://www.linkedin.com/in/efegns/" target="_blank" rel="noopener">
-        <span class="left">
-          <!-- LinkedIn SVG -->
-          <svg aria-hidden="true" viewBox="0 0 24 24" class="icon">
-            <path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8.5h4V24h-4V8.5zM8.5 8.5h3.83v2.11h.05c.53-1.01 1.84-2.07 3.79-2.07 4.05 0 4.8 2.67 4.8 6.14V24h-4v-6.87c0-1.64-.03-3.75-2.28-3.75-2.29 0-2.64 1.79-2.64 3.64V24h-4V8.5z"/>
+  <!-- ============================================================
+       NAVBAR
+  ============================================================ -->
+  <header id="navbar">
+    <div class="nav-container">
+      <!-- Logo -->
+      <a href="#anasayfa" class="nav-logo" aria-label="Güneş Yapısal Çelik Anasayfa">
+        <div class="logo-icon" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="24" height="24" fill="white">
+            <path d="M4 28V8l8-4 8 4 8-4v20l-8 4-8-4-8 4zm2-2.6 6-3V9.6l-6 3v12.8zm8-3 6 3V9.6l-6-3v15.8zm8 3 6-3V9.6l-6 3v12.8z"/>
           </svg>
-          <span class="text">
-            <span class="label">Linkedin</span>
-            <span class="handle">@efegns</span>
-          </span>
-        </span>
-        <span class="external" aria-hidden="true">
-          <svg viewBox="0 0 24 24" class="icon external-icon">
-            <path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42 9.3-9.29H14V3z"></path>
-            <path d="M5 5h6v2H7v10h10v-4h2v6H5V5z"></path>
-          </svg>
-        </span>
+        </div>
+        <div>
+          <span class="logo-name">GÜNEŞ</span>
+          <span class="logo-sub">Yapısal Çelik A.Ş.</span>
+        </div>
       </a>
 
-    <!-- CV Görüntüle butonu -->
-<a class="link cv" href="assets/efegunescv.pdf" target="_blank" rel="noopener">
-  <span class="left">
-    <!-- CV ikon (document svg) -->
-    <svg aria-hidden="true" viewBox="0 0 24 24" class="icon">
-      <path d="M6 2h9l5 5v15a2 2 0 0 1-2 2H6a2 
-        2 0 0 1-2-2V4a2 2 0 0 1 2-2zm7 
-        7V3.5L18.5 9H13z"/>
-    </svg>
-    <span class="text">
-      <span class="label">CV Görüntüle</span>
-      <span class="handle">PDF</span>
-    </span>
-  </span>
-  <span class="external" aria-hidden="true">
-    <svg viewBox="0 0 24 24" class="icon external-icon">
-      <path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42 
-        9.3-9.29H14V3z"></path>
-      <path d="M5 5h6v2H7v10h10v-4h2v6H5V5z"></path>
-    </svg>
-  </span>
-</a>
+      <!-- Desktop nav -->
+      <nav class="nav-links" aria-label="Ana Menü">
+        <a href="#anasayfa"      class="nav-link">Anasayfa</a>
+        <a href="#kurumsal"      class="nav-link">Kurumsal</a>
+        <a href="#hizmetlerimiz" class="nav-link">Hizmetlerimiz</a>
+        <a href="#projelerimiz"  class="nav-link">Projelerimiz</a>
+        <a href="#iletisim"      class="nav-link">İletişim</a>
+        <a href="#iletisim"      class="btn btn-orange btn-sm">Teklif Al</a>
+      </nav>
 
-    </nav>
+      <!-- Hamburger -->
+      <button id="menu-btn" class="hamburger" aria-label="Menüyü Aç/Kapat" aria-expanded="false" aria-controls="mobile-menu">
+        <svg id="icon-open"  width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="white" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        <svg id="icon-close" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="white" stroke-width="2" class="d-none" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+    </div>
+
+    <!-- Mobile dropdown -->
+    <div id="mobile-menu" class="mobile-menu d-none" role="navigation" aria-label="Mobil Menü">
+      <a href="#anasayfa"      class="mobile-nav-link">Anasayfa</a>
+      <a href="#kurumsal"      class="mobile-nav-link">Kurumsal</a>
+      <a href="#hizmetlerimiz" class="mobile-nav-link">Hizmetlerimiz</a>
+      <a href="#projelerimiz"  class="mobile-nav-link">Projelerimiz</a>
+      <a href="#iletisim"      class="mobile-nav-link">İletişim</a>
+      <a href="#iletisim"      class="btn btn-orange mobile-cta">Teklif Al</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============================================================
+         HERO
+    ============================================================ -->
+    <section id="anasayfa" class="hero">
+      <div class="hero-bg">
+        <img
+          src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1920&q=80"
+          alt="Çelik konstrüksiyon fabrika"
+          class="hero-img"
+          loading="eager"
+        />
+        <div class="hero-overlay" aria-hidden="true"></div>
+      </div>
+
+      <div class="container hero-content">
+        <p class="eyebrow fade-up" style="--delay:0s">Güneş Yapısal Çelik A.Ş.</p>
+        <h1 class="hero-title fade-up" style="--delay:.1s">
+          Çeliğe Şekil,<br/>
+          <span class="text-orange">Geleceğe</span><br/>
+          Güven Veriyoruz
+        </h1>
+        <p class="hero-desc fade-up" style="--delay:.2s">
+          Yüksek mukavemetli çelik yapılar, endüstriyel tesisler ve özel projeler için mühendislik çözümleri sunuyoruz.
+        </p>
+        <div class="hero-actions fade-up" style="--delay:.3s">
+          <a href="#projelerimiz" class="btn btn-orange btn-lg">
+            Projelerimizi İnceleyin
+            <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </a>
+          <a href="#iletisim" class="btn btn-outline btn-lg">Bizimle İletişime Geçin</a>
+        </div>
+      </div>
+
+      <div class="scroll-indicator" aria-hidden="true">
+        <div class="scroll-wheel">
+          <div class="scroll-dot"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Bar -->
+    <div class="stats-bar">
+      <div class="container stats-grid">
+        <div class="stat fade-up" style="--delay:0s">
+          <p class="stat-num">250+</p>
+          <p class="stat-lbl">Tamamlanan Proje</p>
+        </div>
+        <div class="stat fade-up" style="--delay:.1s">
+          <p class="stat-num">18</p>
+          <p class="stat-lbl">Yıllık Deneyim</p>
+        </div>
+        <div class="stat fade-up" style="--delay:.2s">
+          <p class="stat-num">120+</p>
+          <p class="stat-lbl">Mutlu Müşteri</p>
+        </div>
+        <div class="stat fade-up" style="--delay:.3s">
+          <p class="stat-num">12</p>
+          <p class="stat-lbl">Uzman Mühendis</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================================
+         KURUMSAL
+    ============================================================ -->
+    <section id="kurumsal" class="section bg-white">
+      <div class="container">
+        <div class="section-header fade-up" style="--delay:0s">
+          <p class="eyebrow">Kurumsal</p>
+          <h2 class="section-title">Hakkımızda</h2>
+          <div class="divider" aria-hidden="true"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-img-wrap fade-up" style="--delay:.1s">
+            <img
+              src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=900&q=80"
+              alt="Güneş Yapısal Çelik fabrika"
+              class="about-img"
+              loading="lazy"
+            />
+            <div class="about-badge">
+              <p class="about-badge-num">18</p>
+              <p class="about-badge-lbl">Yıllık<br/>Tecrübe</p>
+            </div>
+          </div>
+
+          <div class="about-text fade-up" style="--delay:.2s">
+            <p class="body-text">
+              2006 yılında kurulan <strong>Güneş Yapısal Çelik A.Ş.</strong>, Türkiye'nin önde gelen çelik konstrüksiyon firmalarından biri olarak endüstriyel yapılar, ticari tesisler ve altyapı projelerinde yüksek kaliteli çözümler sunmaktadır.
+            </p>
+
+            <div class="mv-grid">
+              <div class="mv-card mv-card--light">
+                <div class="mv-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="#f97316"><path d="M12 2a10 10 0 1 0 0 20A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16zm-1-5h2v2h-2v-2zm0-8h2v6h-2V7z"/></svg>
+                </div>
+                <h3 class="mv-title">Misyonumuz</h3>
+                <p class="mv-text">Müşterilerimize en yüksek kalitede, zamanında ve bütçe dahilinde çelik yapı çözümleri sunarak sektörde güvenilirliğin simgesi olmak.</p>
+              </div>
+              <div class="mv-card mv-card--dark">
+                <div class="mv-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="#f97316"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"/></svg>
+                </div>
+                <h3 class="mv-title mv-title--white">Vizyonumuz</h3>
+                <p class="mv-text mv-text--white">Yenilikçi mühendislik yaklaşımı ve sürdürülebilir üretim anlayışıyla Türkiye'nin en büyük 5 çelik yapı firması arasında yer almak.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         HİZMETLERİMİZ
+    ============================================================ -->
+    <section id="hizmetlerimiz" class="section bg-gray">
+      <div class="container">
+        <div class="section-header fade-up" style="--delay:0s">
+          <p class="eyebrow">Ne Yapıyoruz</p>
+          <h2 class="section-title">Hizmetlerimiz</h2>
+          <div class="divider" aria-hidden="true"></div>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card fade-up" style="--delay:0s">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="#f97316"><path d="M12 3L2 12h3v9h6v-5h2v5h6v-9h3L12 3zm0 2.7L19 11v9h-4v-5H9v5H5v-9l7-5.3z"/></svg>
+            </div>
+            <h3 class="service-title">Çelik Konstrüksiyon</h3>
+            <p class="service-text">Endüstriyel ve ticari yapılar için yüksek mukavemetli çelik iskelet sistemleri tasarım ve imalatı.</p>
+          </article>
+
+          <article class="service-card fade-up" style="--delay:.1s">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="#f97316"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14l-5-5 1.41-1.41L12 14.17l7.59-7.59L21 8l-9 9z"/></svg>
+            </div>
+            <h3 class="service-title">Endüstriyel Tesis Kurulumu</h3>
+            <p class="service-text">Fabrika, depo, lojistik merkezi ve üretim tesislerinin anahtar teslim kurulum hizmetleri.</p>
+          </article>
+
+          <article class="service-card fade-up" style="--delay:.2s">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="#f97316"><path d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zM7 7v2h14V7H7z"/></svg>
+            </div>
+            <h3 class="service-title">Çelik Çatı Sistemleri</h3>
+            <p class="service-text">Sandviç panel, trapez sac ve özel profil sistemleriyle uzun açıklıklı çatı ve cephe çözümleri.</p>
+          </article>
+
+          <article class="service-card fade-up" style="--delay:.3s">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="#f97316"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-9 12H9V8h2v6zm4 0h-2V8h2v6z"/></svg>
+            </div>
+            <h3 class="service-title">Projelendirme &amp; Danışmanlık</h3>
+            <p class="service-text">Mühendislik hesapları, statik analizler ve BIM destekli proje yönetimi danışmanlık hizmetleri.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         PROJELERİMİZ
+    ============================================================ -->
+    <section id="projelerimiz" class="section bg-white">
+      <div class="container">
+        <div class="section-header fade-up" style="--delay:0s">
+          <p class="eyebrow">Referanslar</p>
+          <h2 class="section-title">Projelerimiz</h2>
+          <div class="divider" aria-hidden="true"></div>
+        </div>
+
+        <!-- Filters -->
+        <div class="filter-group fade-up" style="--delay:.1s" role="group" aria-label="Proje Filtresi">
+          <button class="filter-btn active" data-filter="all">Tümü</button>
+          <button class="filter-btn" data-filter="devam">Devam Eden</button>
+          <button class="filter-btn" data-filter="tamamlanan">Tamamlanan</button>
+        </div>
+
+        <!-- Grid -->
+        <div id="projects-grid" class="projects-grid">
+
+          <article class="project-card fade-up" style="--delay:0s" data-category="tamamlanan">
+            <div class="project-img-wrap">
+              <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=700&q=80" alt="Organize Sanayi Depo Kompleksi" loading="lazy" />
+              <span class="project-badge badge-done">Tamamlandı</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">OSB Depo Kompleksi</h3>
+              <p class="project-desc">Ankara, 12.000 m² depo ve idari bina çelik konstrüksiyonu</p>
+              <span class="project-loc">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#9ca3af" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/></svg>
+                Ankara
+              </span>
+            </div>
+          </article>
+
+          <article class="project-card fade-up" style="--delay:.1s" data-category="tamamlanan">
+            <div class="project-img-wrap">
+              <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&w=700&q=80" alt="Otomotiv Üretim Fabrikası" loading="lazy" />
+              <span class="project-badge badge-done">Tamamlandı</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Otomotiv Üretim Fabrikası</h3>
+              <p class="project-desc">Bursa, 22.000 m² üretim tesisi çelik iskelet ve çatı sistemi</p>
+              <span class="project-loc">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#9ca3af" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/></svg>
+                Bursa
+              </span>
+            </div>
+          </article>
+
+          <article class="project-card fade-up" style="--delay:.2s" data-category="devam">
+            <div class="project-img-wrap">
+              <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=700&q=80" alt="E-Ticaret Lojistik Merkezi" loading="lazy" />
+              <span class="project-badge badge-ongoing">Devam Ediyor</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">E-Ticaret Lojistik Merkezi</h3>
+              <p class="project-desc">İstanbul, 35.000 m² çok katlı çelik depolama yapısı</p>
+              <span class="project-loc">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#9ca3af" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/></svg>
+                İstanbul
+              </span>
+            </div>
+          </article>
+
+          <article class="project-card fade-up" style="--delay:.3s" data-category="tamamlanan">
+            <div class="project-img-wrap">
+              <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=700&q=80" alt="Tarımsal Soğuk Hava Deposu" loading="lazy" />
+              <span class="project-badge badge-done">Tamamlandı</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Tarımsal Soğuk Hava Deposu</h3>
+              <p class="project-desc">Konya, 8.000 m² soğuk hava depolu çelik yapı kompleksi</p>
+              <span class="project-loc">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#9ca3af" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/></svg>
+                Konya
+              </span>
+            </div>
+          </article>
+
+          <article class="project-card fade-up" style="--delay:.4s" data-category="devam">
+            <div class="project-img-wrap">
+              <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=700&q=80" alt="Enerji Santrali Taşıyıcı Sistem" loading="lazy" />
+              <span class="project-badge badge-ongoing">Devam Ediyor</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Enerji Santrali Taşıyıcı Sistem</h3>
+              <p class="project-desc">İzmir, RES için çelik kule taşıyıcı platform ve erişim yapıları</p>
+              <span class="project-loc">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#9ca3af" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/></svg>
+                İzmir
+              </span>
+            </div>
+          </article>
+
+          <article class="project-card fade-up" style="--delay:.5s" data-category="tamamlanan">
+            <div class="project-img-wrap">
+              <img src="https://images.unsplash.com/photo-1590725121839-892b458a74fe?auto=format&fit=crop&w=700&q=80" alt="AVM Çelik Çatı Kaplama" loading="lazy" />
+              <span class="project-badge badge-done">Tamamlandı</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">AVM Çelik Çatı Kaplama</h3>
+              <p class="project-desc">Gaziantep, 5.500 m² sandviç panel çatı ve cephe sistemi</p>
+              <span class="project-loc">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#9ca3af" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/></svg>
+                Gaziantep
+              </span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         İLETİŞİM
+    ============================================================ -->
+    <section id="iletisim" class="section bg-gray">
+      <div class="container">
+        <div class="section-header fade-up" style="--delay:0s">
+          <p class="eyebrow">Bize Ulaşın</p>
+          <h2 class="section-title">İletişim</h2>
+          <div class="divider" aria-hidden="true"></div>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Info + Map -->
+          <div class="contact-left fade-up" style="--delay:.1s">
+            <div class="contact-info-cards">
+              <div class="contact-info-card">
+                <div class="cinfo-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="#f97316"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                </div>
+                <div>
+                  <p class="cinfo-label">Telefon</p>
+                  <a href="tel:+902121234567" class="cinfo-value">+90 (212) 123 45 67</a>
+                </div>
+              </div>
+              <div class="contact-info-card">
+                <div class="cinfo-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="#f97316"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                </div>
+                <div>
+                  <p class="cinfo-label">E-posta</p>
+                  <a href="mailto:info@gunescelik.com.tr" class="cinfo-value">info@gunescelik.com.tr</a>
+                </div>
+              </div>
+              <div class="contact-info-card contact-info-card--full">
+                <div class="cinfo-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="#f97316"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>
+                </div>
+                <div>
+                  <p class="cinfo-label">Adres</p>
+                  <p class="cinfo-value">Organize Sanayi Bölgesi, Mermerciler Mah. Çelik Cad. No: 42, 41400 Gebze / Kocaeli</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Map -->
+            <div class="map-wrap" aria-label="Harita">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96342.37152959737!2d29.30!3d40.80!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cb23cdda7bd3d9%3A0x6b99a2b4ab60da74!2sGebze%2C%20Kocaeli!5e0!3m2!1str!2str!4v1710000000000!5m2!1str!2str"
+                width="100%" height="100%"
+                style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Güneş Yapısal Çelik Harita"
+              ></iframe>
+            </div>
+          </div>
+
+          <!-- Form -->
+          <div class="contact-form-wrap fade-up" style="--delay:.2s">
+            <h3 class="form-heading">Teklif İsteyin</h3>
+            <form id="contact-form" novalidate aria-label="İletişim Formu">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name" class="form-label">Ad Soyad <span class="req" aria-hidden="true">*</span></label>
+                  <input type="text" id="name" name="name" required autocomplete="name" class="form-input" placeholder="Ahmet Yılmaz" />
+                </div>
+                <div class="form-group">
+                  <label for="company" class="form-label">Firma Adı</label>
+                  <input type="text" id="company" name="company" autocomplete="organization" class="form-input" placeholder="Şirket A.Ş." />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="email" class="form-label">E-posta <span class="req" aria-hidden="true">*</span></label>
+                  <input type="email" id="email" name="email" required autocomplete="email" class="form-input" placeholder="ahmet@ornek.com" />
+                </div>
+                <div class="form-group">
+                  <label for="phone" class="form-label">Telefon</label>
+                  <input type="tel" id="phone" name="phone" autocomplete="tel" class="form-input" placeholder="+90 5xx xxx xx xx" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="service" class="form-label">Hizmet Türü <span class="req" aria-hidden="true">*</span></label>
+                <select id="service" name="service" required class="form-input">
+                  <option value="" disabled selected>Hizmet seçin...</option>
+                  <option value="celik-konstruksiyon">Çelik Konstrüksiyon</option>
+                  <option value="endustriyel-tesis">Endüstriyel Tesis Kurulumu</option>
+                  <option value="cati-sistemleri">Çelik Çatı Sistemleri</option>
+                  <option value="projelendirme">Projelendirme &amp; Danışmanlık</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message" class="form-label">Mesajınız <span class="req" aria-hidden="true">*</span></label>
+                <textarea id="message" name="message" required rows="4" class="form-input" style="resize:none;" placeholder="Projeniz hakkında kısaca bilgi verin..."></textarea>
+              </div>
+              <button type="submit" class="btn btn-orange btn-lg btn-full">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+                Mesaj Gönder
+              </button>
+              <p id="form-feedback" class="form-feedback d-none" role="alert" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- Brand -->
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <div class="logo-icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32" width="24" height="24" fill="white">
+                <path d="M4 28V8l8-4 8 4 8-4v20l-8 4-8-4-8 4zm2-2.6 6-3V9.6l-6 3v12.8zm8-3 6 3V9.6l-6-3v15.8zm8 3 6-3V9.6l-6 3v12.8z"/>
+              </svg>
+            </div>
+            <div>
+              <p class="logo-name">GÜNEŞ</p>
+              <p class="logo-sub">Yapısal Çelik A.Ş.</p>
+            </div>
+          </div>
+          <p class="footer-desc">2006'dan bu yana Türkiye genelinde yüzlerce projeye imza atan güvenilir çelik yapı çözüm ortağınız.</p>
+          <div class="social-links">
+            <a href="#" class="social-icon" aria-label="LinkedIn"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8.5h4V24h-4V8.5zM8.5 8.5h3.83v2.11h.05c.53-1.01 1.84-2.07 3.79-2.07 4.05 0 4.8 2.67 4.8 6.14V24h-4v-6.87c0-1.64-.03-3.75-2.28-3.75-2.29 0-2.64 1.79-2.64 3.64V24h-4V8.5z"/></svg></a>
+            <a href="#" class="social-icon" aria-label="Instagram"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162S8.597 18.163 12 18.163s6.162-2.759 6.162-6.162S15.403 5.838 12 5.838zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+            <a href="#" class="social-icon" aria-label="Facebook"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+            <a href="#" class="social-icon" aria-label="YouTube"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+          </div>
+        </div>
+
+        <!-- Quick links -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Hızlı Menü</h4>
+          <ul class="footer-links">
+            <li><a href="#anasayfa"      class="footer-link">Anasayfa</a></li>
+            <li><a href="#kurumsal"      class="footer-link">Kurumsal</a></li>
+            <li><a href="#hizmetlerimiz" class="footer-link">Hizmetlerimiz</a></li>
+            <li><a href="#projelerimiz"  class="footer-link">Projelerimiz</a></li>
+            <li><a href="#iletisim"      class="footer-link">İletişim</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact info -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">İletişim</h4>
+          <ul class="footer-contact-list">
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#f97316" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>
+              Gebze / Kocaeli, Türkiye
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#f97316" aria-hidden="true"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+              <a href="tel:+902121234567">+90 (212) 123 45 67</a>
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#f97316" aria-hidden="true"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+              <a href="mailto:info@gunescelik.com.tr">info@gunescelik.com.tr</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> Güneş Yapısal Çelik A.Ş. Tüm hakları saklıdır.</p>
+        <p>Tasarım &amp; Geliştirme: Güneş Dijital</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       JAVASCRIPT
+  ============================================================ -->
+  <script>
+    // ── Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // ── Navbar scroll behaviour
+    const navbar = document.getElementById('navbar');
+    function updateNavbar() {
+      navbar.classList.toggle('navbar-scrolled', window.scrollY > 50);
+    }
+    window.addEventListener('scroll', updateNavbar, { passive: true });
+    updateNavbar();
+
+    // ── Mobile menu toggle
+    const menuBtn    = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const iconOpen   = document.getElementById('icon-open');
+    const iconClose  = document.getElementById('icon-close');
+
+    menuBtn.addEventListener('click', () => {
+      const open = mobileMenu.classList.contains('d-none');
+      mobileMenu.classList.toggle('d-none', !open);
+      iconOpen.classList.toggle('d-none', open);
+      iconClose.classList.toggle('d-none', !open);
+      menuBtn.setAttribute('aria-expanded', String(open));
+    });
+
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('d-none');
+        iconOpen.classList.remove('d-none');
+        iconClose.classList.add('d-none');
+        menuBtn.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    // ── Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const id = a.getAttribute('href').slice(1);
+        const target = document.getElementById(id);
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+
+    // ── Scroll fade-up animation
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const el    = entry.target;
+          const delay = el.style.getPropertyValue('--delay') || '0s';
+          el.style.transitionDelay = delay;
+          el.classList.add('visible');
+          observer.unobserve(el);
+        }
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+    // ── Project filter
+    const filterBtns   = document.querySelectorAll('.filter-btn');
+    const projectCards = document.querySelectorAll('#projects-grid .project-card');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+        projectCards.forEach(card => {
+          const show = filter === 'all' || card.dataset.category === filter;
+          card.style.display = show ? '' : 'none';
+          if (show) {
+            card.classList.remove('visible');
+            void card.offsetWidth;
+            card.classList.add('visible');
+          }
+        });
+      });
+    });
+
+    // ── Contact form
+    const form     = document.getElementById('contact-form');
+    const feedback = document.getElementById('form-feedback');
+
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      if (!form.checkValidity()) { form.reportValidity(); return; }
+      const btn = form.querySelector('button[type="submit"]');
+      btn.disabled = true;
+      btn.textContent = 'Gönderiliyor…';
+      setTimeout(() => {
+        btn.disabled = false;
+        btn.innerHTML = '<svg width="20" height="20" viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg> Mesaj Gönder';
+        feedback.textContent = '✓ Mesajınız başarıyla gönderildi. En kısa sürede dönüş yapacağız.';
+        feedback.className   = 'form-feedback form-feedback--success';
+        form.reset();
+        setTimeout(() => { feedback.className = 'form-feedback d-none'; }, 5000);
+      }, 1200);
+    });
+  </script>
 </body>
 </html>
-
-
-
